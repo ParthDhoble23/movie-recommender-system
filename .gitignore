@@ -1,4 +1,2 @@
-venv
-*.pkl
-model/
-data/processed/
+venvecho "*.pkl" >> .gitignore
+echo "*.pickle" >> .gitignore   # just in case
