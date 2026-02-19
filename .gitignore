@@ -1,2 +1,5 @@
-venvecho "*.pkl" >> .gitignore
+venv
+echo "*.pkl" >> .gitignore
 echo "*.pickle" >> .gitignore   # just in case
+*.pkl
+*.pickle
