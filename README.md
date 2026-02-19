@@ -1,1 +1,17 @@
-echo "# Movie Recommender System`n`nA content-based movie recommendation system built with Python.`nIt uses **cosine similarity** on movie metadata (genres, keywords, cast, crew) from the TMDB 5000 Movies dataset.`n`n## Features`n- Similarity matrix computed using scikit-learn's `cosine_similarity``n- Recommendations based on movie features`n- Web/app interface (Flask / custom / Streamlit)`n- Full ML pipeline shown in Jupyter notebook`n`n## Installation & Setup`n`n1. **Clone the repository**`n   ```bash`n   git clone https://github.com/ParthDhoble23/movie-recommender-system.git`n   cd movie-recommender-system`n   ````n`n2. **Create and activate virtual environment** (recommended)`n   ```powershell`n   python -m venv venv`n   .\venv\Scripts\Activate.ps1          # PowerShell`n   # or for cmd: venv\Scripts\activate.bat`n   ````n`n3. **Install dependencies**`n   ```bash`n   pip install -r requirements.txt`n   ````n`n4. **Generate pickle files** (required for recommendations)`n   Run the script that computes similarity:`n   ```bash`n   python main.py`n   ````n   This creates `similarity.pkl`, `movies.pkl`, `movie_dict.pkl` locally.`n`n5. **Run the application**`n   ```bash`n   python app.py`n   ````n   Open the URL shown in your browser (usually http://127.0.0.1:5000 or similar).`n`n## ML Exploration Notebook`n`nThe complete data loading, cleaning, feature engineering, vectorization, and similarity computation are in:`n`n- [notebooks/movie-recommender-system.ipynb](./notebooks/movie-recommender-system.ipynb)`n  Main notebook: TMDB data merge, TF-IDF, cosine similarity, recommendation function`n`n**Note**: Notebook outputs are cleared to keep the repository lightweight. Run it locally to see results.`n`n## Important Notes`n- Large pickle files (`*.pkl`) are **not** committed to GitHub (exceed 100 MB limit).`n  They are regenerated when you run `main.py` or the notebook.`n- Dataset: [TMDB 5000 Movies + Credits](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)`n`nBuilt by Parth (@Parth23xx)" | Out-File -FilePath temp_README.md -Encoding utf8
+# Movie Recommender System
+
+A content-based movie recommendation system built with Python.  
+It uses **cosine similarity** on movie metadata (genres, keywords, cast, crew) from the TMDB 5000 Movies dataset.
+
+## Features
+- Similarity matrix computed using scikit-learn's `cosine_similarity`
+- Recommendations based on movie features
+- Web/app interface (Flask / custom / Streamlit)
+- Full ML pipeline shown in Jupyter notebook
+
+## Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+    git clone https://github.com/ParthDhoble23/movie-recommender-system.git
+   cd movie-recommender-system
